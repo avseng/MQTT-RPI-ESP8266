@@ -23,9 +23,9 @@
 	
 	> pip install adafruit-ampy
 	
-3. Downloding the latest MicroPython firmware (.bin file) from https://micropython.org/download/
+3. Downloding the latest MicroPython firmware (.bin file) from https://micropython.org/download/esp8266
 
-4. Connect the ESP32 device to computer and check the port (COM3)
+4. Connect the ESP8266 device to computer and check the port (COM3 - for windows)
 
 5. Open command prompt and using esptool.py erase the exiting firmware from flash memory of esp8266.
 
@@ -37,9 +37,9 @@
 	
 7. Use ampy to check the file system or transfer new python file to esp8266
 	
-	> **ampy -p COM3 ls -l** ---->  To list down all the existing files from esp32
+	> **ampy -p COM3 ls -l** ---->  To list down all the existing files from esp8266
 	
-	> **ampy -p COM3 get [SOURCE_FILE_NAME] [DESTINATION_FILE_NAME]** ---> Copy file from esp32 to local machine
+	> **ampy -p COM3 get [SOURCE_FILE_NAME] [DESTINATION_FILE_NAME]** ---> Copy file from esp8266 to local machine
 	
-	> **ampy -p COM3 put [FILE_NAME_WITH_PATH]** ----> copy file to esp32
+	> **ampy -p COM3 put [FILE_NAME_WITH_PATH]** ----> copy file to esp8266
 	
