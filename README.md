@@ -1,15 +1,15 @@
 # Setup MQTT broker server on Raspberry Pi
 1. Update raspberry pi
 
-> sudo apt update
+	> sudo apt update
 
 3. Install mosquitto broker and client
 
-> sudo apt install mosquitto mosquitto-clients
+	> sudo apt install mosquitto mosquitto-clients
 
 5. Set mosquitto broker server to auto start after reboot.
 
-> sudo systemctl enable mosquitto.service
+	> sudo systemctl enable mosquitto.service
 
 
 # Setup ESP8266 as MQTT client (with Micro Python)
@@ -35,7 +35,7 @@
 
 	> esptool.py --port COM3 write_flash flash_size=detect 0 D:\ESP8266\esp8266-20210902-v1.17.bin
 	
-7. Use ampy to check the file system or transfer new python file to esp32
+7. Use ampy to check the file system or transfer new python file to esp8266
 	
 	> **ampy -p COM3 ls -l** ---->  To list down all the existing files from esp32
 	
