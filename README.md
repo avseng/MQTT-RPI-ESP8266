@@ -33,7 +33,7 @@
 	
 6. write the downloaded firmware to esp8266
 
-	> esptool.py --port COM3 write_flash flash_size=detect 0 D:\ESP8266\esp8266-20210902-v1.17.bin
+	> esptool.py --port COM3 write_flash --flash_size=detect 0 D:\ESP8266\esp8266-20210902-v1.17.bin
 	
 7. Use ampy to check the file system or transfer new python file to esp8266
 	
